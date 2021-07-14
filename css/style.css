@@ -1,0 +1,231 @@
+header {
+  background-color: #144572d4;
+  display: grid;
+  width: 100%;
+  grid-template-rows: 150px;
+  height: 150px;
+  grid-area: head; }
+  header nav {
+    display: grid;
+    grid-template-rows: 75px 75px;
+    grid-template-columns: 1fr 2fr 1fr;
+    width: 100%;
+    padding-bottom: 15px; }
+    header nav .logo {
+      margin: 10px;
+      grid-row: 1/3; }
+    header nav .imagenLogo {
+      width: 100%;
+      max-width: 120px;
+      max-height: 120px; }
+    header nav .seeker {
+      grid-column: 2/3;
+      grid-row: 1/3;
+      display: flex;
+      align-items: center;
+      margin: 15%; }
+    header nav .barSeeker {
+      width: 100%;
+      height: 30px;
+      margin-right: 4px; }
+    header nav .register {
+      grid-row: 1/2;
+      grid-column: 3/4;
+      margin-top: 10%;
+      display: flex;
+      align-items: center; }
+      header nav .register .logIn {
+        text-decoration: none;
+        padding: 15px 5px; }
+        header nav .register .logIn .logIn__text {
+          color: #1a1818;
+          font-size: 16px; }
+        header nav .register .logIn .logIn__text:hover {
+          color: #3f3939; }
+      header nav .register .signUp {
+        text-decoration: none;
+        padding: 15px 5px; }
+        header nav .register .signUp .signUp__text {
+          color: #1a1818;
+          font-size: 16px; }
+        header nav .register .signUp .signUp__text:hover {
+          color: #3f3939; }
+    header nav .contactHeader {
+      text-decoration: none;
+      font-size: 16px;
+      text-transform: uppercase;
+      font-weight: 600;
+      padding: 10px 5px;
+      height: 45px;
+      border: none;
+      display: inline-block;
+      text-align: center; }
+      header nav .contactHeader .cantactHeader__text {
+        color: #16741c;
+        font-size: 16px; }
+      header nav .contactHeader .contactHeader__icon {
+        color: #1c9e25;
+        font-size: 16px; }
+    header nav .contactHeader--black {
+      background-color: #000;
+      border-radius: 5px; }
+
+.navFilter {
+  grid-area: filter;
+  grid-row: 2/6;
+  grid-column: 1/2;
+  background-color: #2a2b2e;
+  z-index: 1000; }
+  .navFilter .filters {
+    margin-left: -40px;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin-top: 0; }
+  .navFilter .btn {
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 10px 5px;
+    width: 100%;
+    height: 45px;
+    display: inline-block;
+    text-align: center;
+    outline: none;
+    border-radius: 0%;
+    margin: 5px; }
+    .navFilter .btn .btn__text {
+      color: #fff;
+      font-family: 'Times New Roman', Times, serif; }
+  .navFilter .btn--grey {
+    background-color: #364151;
+    border-radius: 10px; }
+
+section {
+  grid-area: section;
+  grid-row: 4;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center; }
+  section .motocycle {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    height: 250px;
+    margin: 10px;
+    width: 300px; }
+    section .motocycle img {
+      grid-row: 1/3;
+      grid-column: 1/4;
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      opacity: 0.8; }
+    section .motocycle .motocycle__title {
+      grid-column: 2/3;
+      grid-row: 2/3;
+      z-index: 1;
+      text-align: center; }
+  section .car {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    height: 250px;
+    margin: 10px;
+    width: 300px; }
+    section .car img {
+      grid-row: 1/3;
+      grid-column: 1/4;
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      opacity: 0.8; }
+    section .car .car__title {
+      grid-column: 2/3;
+      grid-row: 2/3;
+      z-index: 1;
+      text-align: center; }
+  section .house {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    height: 250px;
+    margin: 10px;
+    width: 300px; }
+    section .house img {
+      grid-row: 1/3;
+      grid-column: 1/4;
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      opacity: 0.8; }
+    section .house .house__title {
+      grid-column: 2/3;
+      grid-row: 2/3;
+      z-index: 1;
+      text-align: center; }
+  section .stole {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    height: 250px;
+    margin: 10px;
+    width: 300px; }
+    section .stole img {
+      grid-row: 1/3;
+      grid-column: 1/4;
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      opacity: 0.8; }
+    section .stole .stole__title {
+      grid-column: 2/3;
+      grid-row: 2/3;
+      z-index: 1;
+      text-align: center; }
+  section .bike {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    height: 250px;
+    margin: 10px;
+    width: 300px; }
+    section .bike img {
+      grid-row: 1/3;
+      grid-column: 1/4;
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      opacity: 0.8; }
+    section .bike .bike__title {
+      grid-column: 2/3;
+      grid-row: 2/3;
+      z-index: 1;
+      text-align: center; }
+  section .accident {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    height: 250px;
+    margin: 10px;
+    width: 300px; }
+    section .accident img {
+      grid-row: 1/3;
+      grid-column: 1/4;
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      opacity: 0.8; }
+    section .accident .accident__title {
+      grid-column: 2/3;
+      grid-row: 2/3;
+      z-index: 1;
+      text-align: center; }
+  section .solicitar {
+    grid-row: 4/5;
+    grid-column: 1/4;
+    width: 100%;
+    height: 50px;
+    background-color: #4357C8;
+    z-index: 1; }
